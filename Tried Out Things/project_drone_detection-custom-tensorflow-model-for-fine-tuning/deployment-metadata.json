@@ -1,0 +1,156 @@
+{
+    "version": 1,
+    "samplesPerInference": 9216,
+    "axesCount": 1,
+    "classes": [
+        "drone\r"
+    ],
+    "deployCounter": 13,
+    "folders": {
+        "input": "/home/input",
+        "output": "/home/output"
+    },
+    "frequency": 0,
+    "impulse": {
+        "inputBlocks": [
+            {
+                "db": false,
+                "id": 701,
+                "name": "Image data",
+                "type": "image",
+                "title": "Image data",
+                "createdBy": "clone",
+                "cropAnchor": "middle-center",
+                "imageWidth": 96,
+                "resizeMode": "squash",
+                "description": "EON Tuner",
+                "imageHeight": 96,
+                "resizeMethod": "lanczos3",
+                "labelingMethod": "object_detection",
+                "tunerTemplateId": -1,
+                "createdAt": "2025-04-27T15:15:52.906Z"
+            }
+        ],
+        "dspBlocks": [
+            {
+                "metadata": {
+                    "created": "2025-04-27T12:18:25.143Z",
+                    "dspConfig": {
+                        "options": {
+                            "channels": "Grayscale"
+                        },
+                        "calculateFeatureImportance": false
+                    },
+                    "labels": [
+                        "drone\r"
+                    ],
+                    "valuesPerAxis": 9216,
+                    "windowCount": 1657,
+                    "featureCount": 9216,
+                    "windowSizeMs": 0,
+                    "windowIncreaseMs": 0,
+                    "frequency": 0,
+                    "padZeros": false,
+                    "outputConfig": {
+                        "type": "image",
+                        "shape": {
+                            "width": 96,
+                            "height": 96,
+                            "channels": 1,
+                            "frames": 1
+                        }
+                    },
+                    "fftUsed": [],
+                    "includeEmptyLabels": false,
+                    "inputShape": [
+                        9216
+                    ],
+                    "includedSamplesAreInOrder": true,
+                    "resizingAlgorithmVersion": 2
+                },
+                "db": false,
+                "id": 702,
+                "axes": [
+                    "image"
+                ],
+                "name": "Image",
+                "type": "image",
+                "input": 701,
+                "title": "Image",
+                "autotune": false,
+                "createdBy": "clone",
+                "description": "EON Tuner",
+                "tunerTemplateId": -1,
+                "implementationVersion": 1,
+                "createdAt": "2025-04-27T15:15:52.909Z"
+            }
+        ],
+        "learnBlocks": [
+            {
+                "thresholds": {
+                    "minScore": 0.5
+                },
+                "db": false,
+                "id": 703,
+                "dsp": [
+                    702
+                ],
+                "name": "Object detection",
+                "type": "keras-object-detection",
+                "title": "Object Detection (Images)",
+                "createdBy": "clone",
+                "description": "EON Tuner",
+                "tunerTemplateId": -1,
+                "createdAt": "2025-04-27T15:15:54.196Z"
+            }
+        ]
+    },
+    "project": {
+        "name": "Project_Drone_Detection",
+        "id": 671562,
+        "owner": "24192929",
+        "apiKey": "ei_315e368b1bdbf5e30ad9b39e1d4a30bc67fc4298b11829ff9361ef5250eaa5e5",
+        "studioHost": "studio.edgeimpulse.com"
+    },
+    "sensor": "camera",
+    "tfliteModels": [
+        {
+            "arenaSize": 1093753,
+            "inputFrameSize": 9216,
+            "inputTensor": "input_1",
+            "outputTensor": "softmax/Softmax:0",
+            "details": {
+                "modelType": "float32",
+                "inputs": [
+                    {
+                        "dataType": "float32",
+                        "name": "serving_default_x:0",
+                        "shape": [
+                            1,
+                            96,
+                            96,
+                            1
+                        ],
+                        "quantizationScale": null,
+                        "quantizationZeroPoint": null
+                    }
+                ],
+                "outputs": [
+                    {
+                        "dataType": "float32",
+                        "name": "StatefulPartitionedCall:0",
+                        "shape": [
+                            1,
+                            12,
+                            12,
+                            2
+                        ],
+                        "quantizationScale": null,
+                        "quantizationZeroPoint": null
+                    }
+                ]
+            },
+            "modelPath": "/home/input/trained.tflite"
+        }
+    ]
+}
