@@ -23,12 +23,12 @@ This project enables **on-device drone detection** using:
 | Feature | Screenshot |
 |--------|------------|
 | Detection Dashboard (Live View) | ![](assets/dashboard-detection.png) |
-| Detection Dashboard (Live Video) | ![](assets/dashboard-clear.png) |
+| Detection Dashboard (Live Video) | ![](assets/detection-video.mov) |
 | Detection Example | ![](assets/drone-detection-overlay.png) |
 | F1, Precision, Recall over Epochs | ![](assets/metrics.png) |
 | Training vs Validation Loss | ![](assets/tvloss.png) |
 | Confusion Matrix | ![](assets/confusion-matrix.png) |
-| Feature Explorer (Edge Impulse) | ![](assets/feature-explorer.png) |
+| Feature Explorer (Edge Impulse) | ![](assets/Feature explorer.png) |
 
 ---
 
