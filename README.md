@@ -4,6 +4,8 @@
 
 A low-cost, real-time, embedded AI system to detect drones using a microcontroller (OpenMV RT1062) and a quantized object detection model trained with [Edge Impulse](https://www.edgeimpulse.com). This project combines deep learning, transfer learning, real-time visualization, and edge deployment for drone surveillance use cases.
 
+Edge-Impulse Project: https://studio.edgeimpulse.com/public/671562/live
+
 ---
 
 ## 🔍 Overview
