@@ -1,6 +1,6 @@
 # Drone-Hunter
 
-# 🛡️ Real-Time Drone Hunter (OpenMV-RT1062)
+# Real-Time Drone Hunter (OpenMV-RT1062)
 
 A low-cost, real-time, embedded AI system to detect drones using a microcontroller (OpenMV RT1062) and a quantized object detection model trained with [Edge Impulse](https://www.edgeimpulse.com). This project combines deep learning, transfer learning, real-time visualization, and edge deployment for drone surveillance use cases.
 
@@ -8,19 +8,19 @@ Edge-Impulse Project: https://studio.edgeimpulse.com/public/671562/live
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 This project enables **on-device drone detection** using:
 
-- 💡 **MobileNetV2 (FOMO)**
-- 📷 **Grayscale 96×96 input**
-- 🧠 **Edge Impulse model training & optimization**
-- 🖥️ **Python GUI for real-time monitoring**
-- ⚙️ **OpenMV RT1062 deployment (ARM Cortex-M7, 600 MHz)**
+-  **MobileNetV2 (FOMO)**
+-  **Grayscale 96×96 input**
+-  **Edge Impulse model training & optimization**
+-  **Python GUI for real-time monitoring**
+-  **OpenMV RT1062 deployment (ARM Cortex-M7, 600 MHz)**
 
 ---
 
-## 📦 Contents
+## Contents
 
 | Feature | Screenshot |
 |--------|------------|
@@ -31,7 +31,7 @@ This project enables **on-device drone detection** using:
 
 ---
 
-## 🧪 Model Training
+## Model Training
 
 Model optimized using **Edge Impulse EON Tuner** with top variants:
 
@@ -48,7 +48,7 @@ Final training results:
 
 ---
 
-## 🖼️ GUI Dashboard (Tkinter)
+## GUI Dashboard (Tkinter)
 
 A Python desktop interface was created using **Tkinter** that:
 - Displays detection status (`Clear` or `Drone Detected`)
@@ -60,7 +60,7 @@ A Python desktop interface was created using **Tkinter** that:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - Edge Impulse (FOMO training & EON Tuner)
 - TensorFlow (custom fine-tuning)
@@ -70,7 +70,7 @@ A Python desktop interface was created using **Tkinter** that:
 
 ---
 
-## ⚠️ Challenges Faced
+## Challenges Faced
 
 - Fine-tuning exported TFLite models locally
 - Synchronizing UART image/metadata parsing
@@ -79,7 +79,7 @@ A Python desktop interface was created using **Tkinter** that:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Add **audio detection** (e.g., drone propeller sound fusion)
 - Expand to **multi-class object detection**
@@ -88,7 +88,7 @@ A Python desktop interface was created using **Tkinter** that:
 
 ---
 
-## 👨‍🎓 Team Members
+## Team Members
 
 - **Siddartha Sandeep P**
 - **Rajarshi**
